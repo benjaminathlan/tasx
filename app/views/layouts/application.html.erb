@@ -9,6 +9,8 @@
 <body>
 
 <%= yield %>
-
+<%= stylesheet_link_tag :all, :cache => true %>
+<%= javascript_include_tag 'jquery/jquery-1.4.2.min' %>
+<%= javascript_include_tag :all, :cache => true %>
 </body>
 </html>
