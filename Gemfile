@@ -9,7 +9,7 @@ gem 'sqlite3-ruby', :require => 'sqlite3'
 
 #HEROKU
 gem 'heroku'
-
+gem 'taps'
 # Use unicorn as the web server
 # gem 'unicorn'
 
