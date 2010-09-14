@@ -7,34 +7,42 @@ gem 'rails', '3.0.0'
 
 gem 'sqlite3-ruby', :require => 'sqlite3'
 
-group :test do
 
+group :test, :spec, :cucumber do
   gem "rspec"
   gem "rspec-rails",      ">= 2.0.0.beta"
-
-  gem "faker"
-  gem "ZenTest"
-  gem "autotest"
-  gem "autotest-rails"
-  # gem "linecache19"
-  # gem 'capybara'
-  # gem "capybara-envjs"
-  gem 'database_cleaner'
-  gem 'cucumber-rails'
-  gem 'cucumber'
-  # 
-  gem 'spork'
-  gem 'launchy'    
-  # 
-  # 
-  # 
-  # gem "ruby-debug"
-  gem "ruby-debug19"
-  
-  # gem install ruby-debug19 -- --with-ruby-include=$rvm_path/src/ruby-1.9.2-rc2/
- 
-  
+  gem "nokogiri"
+  gem "capybara"
+  gem "cucumber"
+  gem "database_cleaner"
+  gem "cucumber-rails"
 end
+
+
+# group :test do
+# 
+#   gem "rspec"
+#   gem "rspec-rails",      ">= 2.0.0.beta"
+# 
+#   gem "faker"
+#   gem "ZenTest"
+#   gem "autotest"
+#   gem "autotest-rails"
+#   gem 'capybara'
+#   # gem "capybara-envjs"
+#   # gem "johnson", :git => 'git://github.com/jbarnette/johnson.git', 'branch' => 'unstable'
+#   # sudo gem install  -v "2.0.0.pre3"
+#   #  sudo gem install capybara-envjs
+#   
+#   
+#   # gem 'capybara-envjs-fixes'
+#   gem 'database_cleaner'
+#   gem 'cucumber-rails'
+#   gem 'cucumber'
+#   gem 'spork'
+#   gem 'launchy' 
+#   gem "ruby-debug19"
+# end
 
 #HEROKU
 gem 'heroku'
