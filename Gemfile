@@ -7,6 +7,46 @@ gem 'rails', '3.0.0'
 
 gem 'sqlite3-ruby', :require => 'sqlite3'
 
+
+group :test, :spec, :cucumber do
+  gem "rspec"
+  gem "rspec-rails",      ">= 2.0.0.beta"
+  gem "nokogiri"
+  gem "capybara"
+  gem "cucumber"
+  gem "database_cleaner"
+  gem "cucumber-rails"
+end
+
+
+# group :test do
+# 
+#   gem "rspec"
+#   gem "rspec-rails",      ">= 2.0.0.beta"
+# 
+#   gem "faker"
+#   gem "ZenTest"
+#   gem "autotest"
+#   gem "autotest-rails"
+#   gem 'capybara'
+#   # gem "capybara-envjs"
+#   # gem "johnson", :git => 'git://github.com/jbarnette/johnson.git', 'branch' => 'unstable'
+#   # sudo gem install  -v "2.0.0.pre3"
+#   #  sudo gem install capybara-envjs
+#   
+#   
+#   # gem 'capybara-envjs-fixes'
+#   gem 'database_cleaner'
+#   gem 'cucumber-rails'
+#   gem 'cucumber'
+#   gem 'spork'
+#   gem 'launchy' 
+#   gem "ruby-debug19"
+# end
+
+#HEROKU
+gem 'heroku'
+gem 'taps'
 # Use unicorn as the web server
 # gem 'unicorn'
 
